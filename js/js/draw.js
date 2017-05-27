@@ -30,7 +30,7 @@ require(['../config'],function(){
 							//抽奖结果
 							$.ajax({
 								type:"post",
-								url:"http://datainfo.duapp.com/lottery/fruitsubmit.php",
+								url:"https://datainfo.duapp.com/lottery/fruitsubmit.php",
 								data: {
 									userID: userID,
 									fruit: fruit
@@ -42,7 +42,7 @@ require(['../config'],function(){
 									}if(result==0) {
 										alert('对不起，您没有抽奖次数');
 									}
-									$.getJSON("http://datainfo.duapp.com/lottery/getsuerfr.php?callback=?",function(data){
+									$.getJSON("https://datainfo.duapp.com/lottery/getsuerfr.php?callback=?",function(data){
 										var str ="";
 										for(var i = 0;i<data.length;i++){
 											str +=`<li>
@@ -68,7 +68,7 @@ require(['../config'],function(){
 			
 			//获取中奖名单
 			
-			$.getJSON("http://datainfo.duapp.com/lottery/getsuerfr.php?callback=?",function(data){
+			$.getJSON("https://datainfo.duapp.com/lottery/getsuerfr.php?callback=?",function(data){
 				var str ="";
 				
 				for(var i = 0;i<data.length;i++){
