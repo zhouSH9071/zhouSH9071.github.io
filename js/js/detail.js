@@ -20,7 +20,7 @@ require(['../config'],function(){
 				window.location.href = "index.html";
 			})
 			//获取数据
-			$.getJSON("http://datainfo.duapp.com/shopdata/getGoods.php?callback=?",{goodsID:goodsID},function(data){
+			$.getJSON("https://datainfo.duapp.com/shopdata/getGoods.php?callback=?",{goodsID:goodsID},function(data){
 				
 				var imgsUrl = JSON.parse(data[0].imgsUrl);
 				var str = "";
@@ -41,7 +41,7 @@ require(['../config'],function(){
 				if(userID){
 					$.ajax({
 						type:"post",
-						url:"http://datainfo.duapp.com/shopdata/updatecar.php",
+						url:"https://datainfo.duapp.com/shopdata/updatecar.php",
 						data: {
 							userID: userID,
 							goodsID: goodsID,
