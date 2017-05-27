@@ -62,7 +62,7 @@ require(['../config'],function(){
 					//获取中奖名单
 				})
 			}else{
-				alert(请登录);
+				alert('请登录');
 				window.location.href = "login.html"
 			}
 			
