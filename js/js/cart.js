@@ -10,7 +10,7 @@ require(['../config'],function(){
 		
 		init:function(){
 			var _this = this;
-			$.getJSON("http://datainfo.duapp.com/shopdata/getCar.php?callback=?",{userID:this.userID},function(data){
+			$.getJSON("https://datainfo.duapp.com/shopdata/getCar.php?callback=?",{userID:this.userID},function(data){
 				console.log(data);
 				_this.goodsNum.html(data.length);	
 				var str ='';
@@ -55,7 +55,7 @@ require(['../config'],function(){
 		
 		addGoodsNumber:function(goodsID,num){
 			$.get(
-				'http://datainfo.duapp.com/shopdata/updatecar.php?callback=?',
+				'https://datainfo.duapp.com/shopdata/updatecar.php?callback=?',
 				{
 					userID:this.userID,
 					goodsID:goodsID,
