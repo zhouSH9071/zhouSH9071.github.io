@@ -14,7 +14,7 @@ require(['../config'],function(){
 			//登录
 			$.ajax({
 				type:'post',
-				url:'http://datainfo.duapp.com/shopdata/userinfo.php',
+				url:'https://datainfo.duapp.com/shopdata/userinfo.php',
 				data:{
 					status:'login',
 					userID:account,
