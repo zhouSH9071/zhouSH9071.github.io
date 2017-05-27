@@ -12,7 +12,7 @@ var common = {
             this.loading.show()
         }else {
             /*没有就创建*/
-            this.loading = $("<div id='loading'><img src='imgs/w.gif'/></div>");
+            this.loading = $("<div id='loading'><img src='imgs/W.gif'/></div>");
             this.loading.appendTo(document.body);
         }
 
